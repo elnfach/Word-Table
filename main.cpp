@@ -31,5 +31,7 @@ int main()
     }
     delete[] str;
 
+    system("pause");
+
 	return 0;
 }
