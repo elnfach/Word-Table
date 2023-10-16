@@ -23,11 +23,11 @@ int main()
     in.close();
 
     char* nextToken = nullptr;
-    char* token = strtok_s(str, " ,.-", &nextToken);
+    char* token = strtok_s(str, " ,.-;()?:=&^%$#@!\"", &nextToken);
 
     while (token != nullptr) {
         std::cout << token << std::endl;
-        token = strtok_s(nullptr, " ,.-", &nextToken);
+        token = strtok_s(nullptr, " ,.-;()?:=&^%$#@!\"", &nextToken);
     }
     delete[] str;
 
